@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background-color: #ffffff;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 5%;
+            gap: 40px;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+            min-height: 100vh; /* Centers content vertically on the screen */
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+        }
+
+        .bio-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .bio-content h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .bio-content p {
+            font-size: 18px;
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 40px 20px;
+                gap: 30px;
+                flex-direction: column;
+            }
+            
+            .bio-content h1 {
+                font-size: 32px;
+            }
+
+            .bio-content p {
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        <img src="Luke Clark.png" alt="Luke Clark" class="profile-photo">
+        
+        <div class="bio-content">
+            <h1>Luke C.</h1>
+            <p>I scored 52% on FINRA SIE on November 24, 2025. Email me at luke@lukecal.com. Currently, I don't have a Vitae accessible online.</p>
+            <p></p>
+        </div>
+    </main>
+
+</body>
+</html>
